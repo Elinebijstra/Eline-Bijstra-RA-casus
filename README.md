@@ -21,7 +21,6 @@ Dit onderzoek heeft als doel om met behulp van R transcriptomics data te analyse
 
 De literatuur die ik heb geraadpleegd, is beschikbaar in de [bronnenmap](literatuur)
 
-Heb je Harry Potter nooit gelezen? Moet je echt doen, [klik maar hier](bronnen/harry-potter.pdf).
 
 ## Methoden
 
