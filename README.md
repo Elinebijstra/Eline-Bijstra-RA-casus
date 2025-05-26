@@ -19,7 +19,7 @@ Reumatoïde artritis (RA) is een chronische auto-immuunziekte die voornamelijk d
 Hoewel er effectieve therapieën beschikbaar zijn die de toestand van RA-patiënten kunnen verbeteren, is er momenteel geen genezing voor de ziekte (S El-Gabalawy, 2002). De ziektemechanismen van RA zijn gedeeltelijk bekend, maar de genregulatie blijft complex. Transcriptomics en meta-analyses spelen een belangrijke rol in het identificeren van genen die mogelijk bijdragen aan een vroegere diagnose en betere behandelingsopties (Afroz et al., 2017).
 Dit onderzoek heeft als doel om met behulp van R transcriptomics data te analyseren en te identificeren welke genen differentieel tot expressie komen bij reumatoïde artritis (RA) in vergelijking met een controlegroep. Daarnaast wordt onderzocht welke biologische pathways betrokken zijn bij de ziekte via Gene Ontology analyse.
 
-De literatuur die ik heb geraadpleegd, is beschikbaar in de [bronnenmap](C:\Users\Eline\OneDrive\Documenten\BML Jaar 2 Periode 4\Casus RA\Eline-Bijstra-RA-casus\literatuur)
+De literatuur die ik heb geraadpleegd, is beschikbaar in de [bronnenmap](literatuur)
 
 Heb je Harry Potter nooit gelezen? Moet je echt doen, [klik maar hier](bronnen/harry-potter.pdf).
 
