@@ -2,13 +2,13 @@
 
 ## 📁 Inhoud/structuur
 
-- `data/raw/` – fictionele datasets voor de analyse van spreuk effectiviteit, gevaar en welke spreuken het beste samengaan met verschillende types staf.  
-- `data/processed` - verwerkte datasets gegenereerd met scripts 
-- `scripts/` – scripts om prachtige onzin te genereren
-- `resultaten/` - grafieken en tabellen
-- `bronnen/` - gebruikte bronnen 
-- `README.md` - het document om de tekst hier te genereren
-- `assets/` - overige documenten voor de opmaak van deze pagina
+- `data/raw/` – bevat originele ruwe data zoals verkregen van de bron.   
+- `data/processed` - verwerkte datasets gegenereerd met scripts.
+- `scripts/` – scripts voor het verwerken van data van transcriptomics-analyses bij reumatoïde artritis (RA).
+- `resultaten/` - uitvoer van analyses, zoals grafieken, plots en tabellen. 
+- `literatuur/` - gebruikte referenties en literatuur voor het onderzoek.  
+- `README.md` - het document om de tekst hier te genereren.
+- `assets/` - overige documenten voor de opmaak van deze pagina.
 - `data_stewardship/` - Voor de competentie beheren ga je aantonen dat je projectgegevens kunt beheren met behulp van GitHub. In deze folder kan je hulpvragen terugvinden om je op gang te helpen met de uitleg van data stewardship. 
 
 ---
@@ -24,7 +24,8 @@ De literatuur die ik heb geraadpleegd, is beschikbaar in de [bronnenmap](literat
 
 ## Methoden
 
-De data is verstrekt door de Afdeling Magische Wetshandhaving en Ollivanders Wandwinkel Archieven. 
+Voor dit onderzoek zijn synoviumbiopten (gewrichtsslijnvlies) gebruikt van 8 personen: 4 met reumatoïde artritis (RA) en 4 zonder RA. De RA-patiënten hadden een bevestigde diagnose van >12 maanden en testten positief op ACPA. De controle personen waren ACPA negatief. De data is afkomstig uit een eerder gepubliceerd onderzoek van Platzer et al. (2019).
+
 
 De ruwe data van spreuken is eerst bewerkt voor analyse met behulp van [scripts/01_clean_spell_data.R](scripts/01_clean_spell_data.R). Vervolgens zijn de spreuken geanalyseerd op kracht en nauwkeurigheid met [scripts/02_spell_analysis.R](scripts/02_spell_analysis.R).
 
