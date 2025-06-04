@@ -26,6 +26,7 @@ De literatuur die ik heb geraadpleegd, is beschikbaar in de [bronnenmap](literat
 
 Voor dit onderzoek zijn synoviumbiopten (gewrichtsslijnvlies) gebruikt van 8 personen: 4 met reumatoïde artritis (RA) en 4 zonder RA. De RA-patiënten hadden een bevestigde diagnose van >12 maanden en testten positief op ACPA. De controle personen waren ACPA negatief. De data is afkomstig uit een eerder gepubliceerd onderzoek van Platzer et al. (2019).
 
+De voorbereiding en voorbewerking van de ruwe reumatoïde artritis data werden uitgevoerd in [Scripts/Count Matrix.R].(Scripts/Count Matrix.R). Vervolgens is op basis van BAM-bestanden een count matrix gegenereerd met [
 
 De ruwe data van spreuken is eerst bewerkt voor analyse met behulp van [scripts/01_clean_spell_data.R](scripts/01_clean_spell_data.R). Vervolgens zijn de spreuken geanalyseerd op kracht en nauwkeurigheid met [scripts/02_spell_analysis.R](scripts/02_spell_analysis.R).
 
