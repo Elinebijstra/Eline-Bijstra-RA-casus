@@ -1,5 +1,10 @@
 # Eline-Bijstra-RA-casus
 
+<p align="center">
+  <img src="assets/Logo_RA_Transcriptomics.png" alt="RA Transcriptomics Logo" width="600"/>
+</p>
+
+
 ## 📁 Inhoud/structuur
 
 - `data/raw/` – bevat originele ruwe data zoals verkregen van de bron.   
