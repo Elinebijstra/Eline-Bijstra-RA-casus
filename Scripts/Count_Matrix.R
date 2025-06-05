@@ -16,6 +16,7 @@ library(Rsubread)
 
 # Feature counts uitvoeren 
 # Met feature counts tellen we het aantal uitgelijnde reads per gen door de BAM-bestanden te vergelijken met de genannotaties uit het GTF-bestand
+# Het GTF bestand is afkomstig van NCBI en hiervoor is het GRCh37.p13 genoom gebruikt
 allsamples <- c("contr1.sorted.bam", "contr2.sorted.bam", "contr3.sorted.bam", "contr4.sorted.bam", "ra5.sorted.bam", "ra6.sorted.bam", "ra7.sorted.bam", "ra8.sorted.bam")
 
 count_matrix <- featureCounts(

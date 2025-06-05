@@ -4,7 +4,7 @@ setwd("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA")
 # getwd toont de huidige working directory
 getwd()
 
-# De functie unzip gebruiken om de gezipte data uit te pakken
+# De functie unzip gebruiken om de gezipte RA data uit te pakken
 unzip("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/Eline-Bijstra-RA-casus/Data/Raw/Data_RA_raw.zip", exdir = "RA_data") 
 
 # Packages downloaden 
@@ -21,13 +21,14 @@ browseVignettes('Rsubread')
 file.exists("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/GCF_000001405.40_GRCh38.p14_genomic.fna")
 
 # Het humane referentie genoom indexeren 
+# Hiervoor is het humane referentie genoom GRCh38.p14 gebruikt van NCBI
 buildindex(
   basename = "ref_human",
   reference = normalizePath("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/GCF_000001405.40_GRCh38.p14_genomic.fna"),
   memory = 4000,
   indexSplit = TRUE)
 
-# De verkregen reuma data mappen tegen het humane genoom
+# De verkregen reuma data mappen tegen het geindexeerde humane genoom
 align.contr1 <- align(
   index = "C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/Ref_Human",  
   readfile1 = normalizePath("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/Eline-Bijstra-RA-casus/Data/Raw/RA_data/Data_RA_raw/SRR4785819_1_subset40k.fastq"),
