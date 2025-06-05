@@ -30,10 +30,11 @@ De voorbereiding en voorbewerking van de ruwe reumatoïde artritis data werden u
 
 
 ## 📊 Resultaten
-
+(De pathways kiezen, die heb ik gekozen via de kegg pathway, Th1 en Th2 cell differentiatie gekozen, daarop kan ik op een klein stukje ingaan. de Go-seq is overkoepelend voor wat er het meeste gebeurd, daaruit ben ik ingegaan op de Tcell differentiatie. daar misschien op een klein stukje ingaan, dus wat 2 genen bijvoorbeeld doen en wat daarmee gebeurd)
 Om inzicht te krijgen in eigenschappen van de te gebruiken spreuken is er een overzicht gemaakt, te vinden in [deze tabel](resultaten/top_10_spells.csv). Onvergeeflijke vloeken zijn niet meegenomen in dit overzicht. 
 
 Om een afweging te maken welke spreuken het meest effectief zijn, is er onderzocht of er een verband te vinden is tussen kracht en accuraatheid. In [het resultaat hiervan](resultaten/spell_power_vs_accuracy.png) is te zien dat er een negatieve daling lijkt te zijn in kracht als de accuraatheid toeneemt. Een uitschieter is de onvergeeflijke vloek *Avada Kedavra*, met zowel hoge kracht als accuraatheid. 
 ## Conclusie
 
 Spreuken met meer accuraatheid lijken minder krachtig te zijn. Een uitzondering op deze trend is de onvergeeflijke vloek *Avada Kedavra*, welke beter niet gebruikt kan worden. 
+(soort van conclusie, genen die bij t helper cellen differentiatie reguleren omhoog, wat zorgt voor bijv. inflammatie)
