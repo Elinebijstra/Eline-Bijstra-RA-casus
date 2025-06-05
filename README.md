@@ -26,7 +26,7 @@ De literatuur die ik heb geraadpleegd, is beschikbaar in de [bronnenmap](literat
 
 Voor dit onderzoek zijn synoviumbiopten (gewrichtsslijnvlies) gebruikt van 8 personen: 4 met reumatoïde artritis (RA) en 4 zonder RA. De RA-patiënten hadden een bevestigde diagnose van >12 maanden en testten positief op ACPA. De controle personen waren ACPA negatief. De data is afkomstig uit een eerder gepubliceerd onderzoek van Platzer et al. (2019).
 
-De voorbereiding en voorbewerking van de ruwe reumatoïde artritis data werden uitgevoerd in [Scripts/Mapping.R](Scripts/Mapping.R). Vervolgens is op basis van BAM-bestanden een count matrix gegenereerd met [Scripts/Count_Matrix.R](Scripts/Count_Matrix.R). Tot slot zijn op de gegenereerde count matrix statistische analyses uitgevoerd, waaronder een differentiële genexpressie analyse zoals DESeq2 en een GO-Seq analyse, zoals beschreven in [Scripts/Statistiek en Analyse.R](Scripts/Statistiek en Analyse.R).
+De voorbereiding en voorbewerking van de ruwe reumatoïde artritis data werden uitgevoerd in [Scripts/Mapping.R](Scripts/Mapping.R) Hierbij is het humane genoom (NCBI RefSeq: GCF_000001405.40) gebruikt als referentie. Vervolgens is op basis van BAM-bestanden een count matrix gegenereerd met [Scripts/Count_Matrix.R](Scripts/Count_Matrix.R) hier is het referentiegenoom met accession number GCF_000001405.25-RS_2024_09 gebruikt. Tot slot zijn op de gegenereerde count matrix statistische analyses uitgevoerd, waaronder een differentiële genexpressie analyse zoals DESeq2 en een GO-Seq analyse, zoals beschreven in [Scripts/Statistiek_en_Analyse.R](Scripts/Statistiek_en_Analyse.R).
 
 
 ## 📊 Resultaten
