@@ -20,32 +20,32 @@
 
 ## Introductie
 
-Reumatoïde artritis (RA) is een chronische auto-immuunziekte die voornamelijk de kleine gewrichten aantast, zoals die in de handen, voeten, knieën en polsen. De ziekte wordt gekarakteriseerd door ontsteking van het synoviale weefsel (Hall et al., 2024). Chronische en herhaalde ontstekingen van de synoviale gewrichten kunnen leiden tot vervorming en vernietiging van kraakbeen en bot, wat uiteindelijk kan resulteren in invaliditeit bij de patiënten (Li et al., 2014).
+Reumatoïde artritis (RA) is een chronische auto-immuunziekte die voornamelijk de kleine gewrichten aantast, zoals die in de handen, voeten, knieën en polsen. De ziekte wordt gekarakteriseerd door ontsteking van het synoviale weefsel (Hall et al., 2024). Chronische en herhaalde ontstekingen van de synoviale gewrichten kunnen leiden tot vervorming en vernietiging van kraakbeen en bot, wat uiteindelijk kan resulteren in invaliditeit bij patiënten (Li et al., 2014).
 Hoewel er effectieve therapieën beschikbaar zijn die de toestand van RA-patiënten kunnen verbeteren, is er momenteel geen genezing voor de ziekte (S El-Gabalawy, 2002). De ziektemechanismen van RA zijn gedeeltelijk bekend, maar de genregulatie blijft complex. Transcriptomics en meta-analyses spelen een belangrijke rol in het identificeren van genen die mogelijk bijdragen aan een vroegere diagnose en betere behandelingsopties (Afroz et al., 2017).
-Dit onderzoek heeft als doel om met behulp van R transcriptomics data te analyseren en te identificeren welke genen differentieel tot expressie komen bij reumatoïde artritis (RA) in vergelijking met een controlegroep. Daarnaast wordt onderzocht welke biologische pathways betrokken zijn bij de ziekte via Gene Ontology analyse.
+Dit onderzoek heeft als doel om met behulp van R transcriptomicsdata te analyseren en te identificeren welke genen differentieel tot expressie komen bij reumatoïde artritis (RA) in vergelijking met een controlegroep. Daarnaast wordt onderzocht welke biologische pathways betrokken zijn bij de ziekte via Gene Ontology analyse.
 
 De literatuur die ik heb geraadpleegd, is beschikbaar in de [bronnenmap](literatuur)
 
 
 ## Methoden
 
-Voor dit onderzoek zijn synoviumbiopten (gewrichtsslijnvlies) gebruikt van 8 personen: 4 met reumatoïde artritis (RA) en 4 zonder RA. De RA-patiënten hadden een bevestigde diagnose van >12 maanden en testten positief op ACPA. De controle personen waren ACPA negatief. De data is afkomstig uit een eerder gepubliceerd onderzoek van Platzer et al. (2019).
+Voor dit onderzoek zijn synoviumbiopten (gewrichtsslijnvlies) gebruikt van 8 personen: 4 met reumatoïde artritis (RA) en 4 zonder RA. De RA-patiënten hadden een bevestigde diagnose van >12 maanden en testten positief op ACPA. De controlepersonen waren ACPA-negatief. De data is afkomstig uit een eerder gepubliceerd onderzoek van Platzer et al. (2019).
 
-De voorbereiding en voorbewerking van de ruwe reumatoïde artritis data werden uitgevoerd in [Scripts/Mapping.R](Scripts/Mapping.R) Hierbij is het humane genoom (NCBI RefSeq: GCF_000001405.40) gebruikt als referentie. Vervolgens is op basis van BAM-bestanden een count matrix gegenereerd met [Scripts/Count_Matrix.R](Scripts/Count_Matrix.R) hier is het referentiegenoom met accession number GCF_000001405.25-RS_2024_09 gebruikt. Tot slot zijn op de gegenereerde count matrix statistische analyses uitgevoerd, waaronder een differentiële genexpressie analyse zoals DESeq2 en een GO-Seq analyse, zoals beschreven in [Scripts/Statistiek_en_Analyse.R](Scripts/Statistiek_en_Analyse.R).
+De voorbereiding en voorbewerking van de ruwe reumatoïde artritis data werden uitgevoerd in [Scripts/Mapping.R](Scripts/Mapping.R) Hierbij is het humane genoom (NCBI RefSeq: GCF_000001405.40) gebruikt als referentie. Vervolgens is op basis van BAM-bestanden een count matrix gegenereerd met [Scripts/Count_Matrix.R](Scripts/Count_Matrix.R) waarbij het referentiegenoom met accession number GCF_000001405.25-RS_2024_09 gebruikt is. Tot slot zijn op de gegenereerde count matrix statistische analyses uitgevoerd, waaronder een differentiële genexpressie analyse waaronder DESeq2 en een GO-Seq analyse, zoals beschreven in [Scripts/Statistiek_en_Analyse.R](Scripts/Statistiek_en_Analyse.R).
 
 
 ## 📊 Resultaten
 
-Om inzicht te krijgen in de biologische processen die betrokken zijn bij reumatoïde artritis (RA), werd een [GO-Seq analyse](Resultaten/GO_plot.png) uitgevoerd op de genen die significant verschillend tot expressie kwamen tussen RA-patiënten en controles. Uit de analyse kwamen diverse immuun-gerelateerde processen naarvoren als significant verrijkt, zoals T-helpercel differentiatie, signaaltransductie en de adaptieve immuunrespons. Dit wijst op afwijkingen in immuunactiviteit bij RA en vormde een basis voor verdere verdieping in een specifieke signaalroutes.
+Om inzicht te krijgen in de biologische processen die betrokken zijn bij reumatoïde artritis (RA), werd een [GO-Seq analyse](Resultaten/GO_plot.png) uitgevoerd op de genen die significant verschillend tot expressie kwamen tussen RA-patiënten en controles. Uit de analyse kwamen diverse immuun-gerelateerde processen naar voren als significant verrijkt, zoals T-helpercel differentiatie, signaaltransductie en de adaptieve immuunrespons. Dit wijst op afwijkingen in immuunactiviteit bij RA en vormde een basis voor verdere verdieping in een specifieke signaalroute.
 
 De [Probability Weighting Function](Resultaten/pwf_plot.png) (PWF) corrigeert voor bias veroorzaakt door verschillen in genlengte, waardoor de resultaten van de GO-Seq analyse betrouwbaarder worden. Deze correctie zorgt ervoor dat genen niet onterecht als significant verrijkt worden beschouwd op basis van hun lengte. 
 
 Vervolgens werd op basis van deze resultaten ingezoomd op een specifieke [KEGG-pathway](Resultaten/hsa04658.pathview.png), namelijk Th1 and Th2 cell differentiation (hsa04658). In deze pathway vertoonden meerdere genen verhoogde expressie, waaronder STAT1, STAT4, T-bet en INF-y, die geassocieerd zijn met Th1-celactivatie.
 
-Tot slot is de differentiële genexpressie visueel weergegeven in een [vulcano plot](Resultaten/VolcanoplotWC.png). Het aantal genen dat significant omhoog zijn gereguleerd zijn 2058 genen en er zijn 2487 genen significant omlaag gereguleerd. 
+Tot slot is de differentiële genexpressie visueel weergegeven in een [volcano plot](Resultaten/VolcanoplotWC.png). Er zijn 2058 genen significant omhoog gereguleerd en 2487 significant omlaag gereguleerd. 
 
 
 ## Conclusie
 
-Uit de analyse van de RA-transcriptomicsdata bleek dat vooral genen betrokken bij het immuunsysteem actief zijn, voornamelijk de genen die een rol spelen bij T-helpercellen. in de Th1 and Th2 cell differentiation pathway kwamen meerdere genen naar voren met hogere activiteit, zoals STAT1, STAT4, T-bet en INF-γ. Deze genen sturen de activatie van Th1-cellen aan, die betrokken zijn bij ontstekingsreacties. De verhoogde activiteit van deze genen past bij het ontstekingsbeeld van reumatoïde artritis. 
+Uit de analyse van de RA-transcriptomicsdata bleek dat vooral genen actief zijn die betrokken zijn bij het imuunsysteem, voornamelijk de genen die een rol spelen bij T-helpercellen. In de Th1 and Th2 cell differentiation pathway kwamen meerdere genen naar voren met hogere activiteit, zoals STAT1, STAT4, T-bet en INF-γ. Deze genen sturen de activatie van Th1-cellen aan, die betrokken zijn bij ontstekingsreacties. De verhoogde activiteit van deze genen past bij het ontstekingsbeeld van reumatoïde artritis. 
 
