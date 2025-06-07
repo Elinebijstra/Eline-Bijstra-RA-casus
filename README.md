@@ -47,7 +47,5 @@ Tot slot is de differentiële genexpressie visueel weergegeven in een [vulcano p
 
 ## Conclusie
 
-De analyse van RA-transcriptomicsdata bracht immuun-gerelateerde processen in kaart met behulp van GOseq en PWF-correctie. De resultaten toonden een verrijking van genen betrokken bij T-helpercelactiviteit. De verdieping in de Th1 and Th2 cell differentiation pathway liet zien dat meerdere Th1-gerelateerde genen verhoogd tot expressie kwamen. Deze uitkomsten bieden een richtinggevend overzicht van de moleculaire processen die verder onderzocht kunnen worden in het kader van RA.
+Uit de analyse van de RA-transcriptomicsdata bleek dat vooral genen betrokken bij het immuunsysteem actief zijn, voornamelijk de genen die een rol spelen bij T-helpercellen. in de Th1 and Th2 cell differentiation pathway kwamen meerdere genen naar voren met hogere activiteit, zoals STAT1, STAT4, T-bet en INF-γ. Deze genen sturen de activatie van Th1-cellen aan, die betrokken zijn bij ontstekingsreacties. De verhoogde activiteit van deze genen past bij het ontstekingsbeeld van reumatoïde artritis. 
 
-Spreuken met meer accuraatheid lijken minder krachtig te zijn. Een uitzondering op deze trend is de onvergeeflijke vloek *Avada Kedavra*, welke beter niet gebruikt kan worden. 
-(soort van conclusie, genen die bij t helper cellen differentiatie reguleren omhoog, wat zorgt voor bijv. inflammatie)
