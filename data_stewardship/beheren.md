@@ -1,3 +1,5 @@
+# Uitleg over een efficiënte en gestructureerde manier van beheren
+
 Het gestructueerd beheren van data is een essentieel onderdeel van een oonderzoeksproces. 
 Dit helpt om fouten in de analyses te voorkomen en het maakt het voor anderen makkelijker om te begrijpen wat er gedaan is. 
 Door de data gestructueerd te ordenen blijft het overzichtelijk voor mijzelf en anderen. 
