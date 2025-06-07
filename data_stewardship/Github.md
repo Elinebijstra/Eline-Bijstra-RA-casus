@@ -1,4 +1,4 @@
-#Uitleg hoe ik GitHub heb gebruikt.
+# Uitleg hoe ik GitHub heb gebruikt.
 
 Tijdens mijn transcriptomics-project heb ik GitHub gebruikt om mijn data en analyses overzichtelijk te beheren. 
 Ik heb gezorgd voor een duidelijke mappenstructuur waarin de ruwe data, verwerkte data, scripts, resultaten en literatuur logisch zijn georganiseerd. 
