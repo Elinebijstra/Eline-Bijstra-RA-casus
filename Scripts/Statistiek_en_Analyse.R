@@ -95,14 +95,11 @@ names(gene_vector) <- rownames(resultaten)
 # Visualiseer de KEGG pathway (hier een voorbeeld: Cytokine signaling)
 pathview(
   gene.data = gene_vector,
-  pathway.id = "hsa05323",   # Kies een pathway die relevant is voor RA
+  pathway.id = "hsa04658",   # Kies een pathway die relevant is voor RA (de Th1 en Th2 cell differentiatie) 
   species = "hsa",           # hsa = Homo sapiens
   gene.idtype = "SYMBOL",    # Jij hebt gen-symbolen zoals 'ANKRD30BL'
   limit = list(gene = 5)     # Kleurbereik van -5 tot +5 log2FC
 )
-
-# VANAF HIER EVEN NAVRAGEN DIT KLEINE STUKJE WAT HIERACHTER KOMT
-keggLink("pathway", "eco:b0221")
 
 
 
