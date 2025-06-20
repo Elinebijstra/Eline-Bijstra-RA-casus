@@ -1,17 +1,16 @@
 # MAPPING
-# De working directory zetten
+# De working directory instellen
 setwd("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA")
 # getwd toont de huidige working directory
 getwd()
 
-# Vervang de bestandsnaam hieronder met je eigen zip-bestand
+# De functie unzip gebruiken om de gezipte RA data uit te pakken
 unzip("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/Data_RA_raw.zip", exdir = "RA_data") 
-#Hiermee worden de bestanden uitgepakt in een submap 'ethanol_data'
 
-# Packages downloaden 
+# Packages BiocManager downloaden (versie '1.30.25')
 install.packages('BiocManager')
-a
-# Package Rsubread downloaden 
+
+# Package Rsubread downloaden (versie '2.22.1')
 BiocManager::install('Rsubread')
 library(Rsubread)
 
@@ -22,14 +21,16 @@ browseVignettes('Rsubread')
 file.exists("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/GCF_000001405.40_GRCh38.p14_genomic.fna")
 
 
-# Het referentie genoom indexeren 
+# Het referentie genoom indexeren
+# Hiervoor is het humane referentie genoom GRCh38.p14 gebruikt van NCBI
+# Met als accession number: NCBI RefSeq: GCF_000001405.40
 buildindex(
   basename = "ref_human",
   reference = normalizePath("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/GCF_000001405.40_GRCh38.p14_genomic.fna"),
   memory = 4000,
   indexSplit = TRUE)
 
-# De RA data mappen tegen het humane genoom
+# De verkregen reuma data mappen tegen het geindexeerde humane genoom
 align.contr1 <- align(
   index = "C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/Ref_Human/ref_human",  
   readfile1 = normalizePath("C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/RA_data/Data_RA_raw/SRR4785819_1_subset40k.fastq"),
@@ -86,7 +87,7 @@ align.ra8 <- align(
   output_file = "ra8.BAM",
   input_format = "FASTQ")
 
-# Laad Rsamtools voor sorteren en indexeren
+# Laad Rsamtools voor sorteren en indexeren (versie '2.24.0')
 install.packages('GenomicRanges')
 library(Rsamtools)
 
