@@ -40,7 +40,7 @@ Dit alles is samengevat in een [flowschema](Resultaten/Flowschema_Scripts.png).
 
 Om inzicht te krijgen in de biologische processen die betrokken zijn bij reumatoïde artritis (RA), werd een [GO-Seq analyse](Resultaten/GO_plot.png) uitgevoerd op de genen die significant verschillend tot expressie kwamen tussen RA-patiënten en controles. Uit de analyse kwamen diverse immuun-gerelateerde processen naar voren als significant verrijkt, zoals T-helpercel differentiatie, signaaltransductie en de adaptieve immuunrespons. Dit wijst op afwijkingen in immuunactiviteit bij RA en vormde een basis voor verdere verdieping in een specifieke signaalroute.
 
-De [Probability Weighting Function](Resultaten/pwf_plot.png) (PWF) corrigeert voor bias veroorzaakt door verschillen in genlengte, waardoor de resultaten van de GO-Seq analyse betrouwbaarder worden. Deze correctie zorgt ervoor dat genen niet onterecht als significant verrijkt worden beschouwd op basis van hun lengte. 
+De [Probability Weighting Function](Resultaten/pwf_plot.png) (PWF) corrigeert voor bias veroorzaakt door verschillen in genlengte, waardoor de resultaten van de GO-Seq analyse betrouwbaarder worden.Hierdoor worden de genen niet onterecht als significant bescouwd op basis van hun lengte. 
 
 Vervolgens werd op basis van deze resultaten ingezoomd op een specifieke [KEGG-pathway](Resultaten/hsa04658.pathview.png), namelijk Th1 and Th2 cell differentiation (hsa04658). In deze pathway vertoonden meerdere genen verhoogde expressie, waaronder STAT1, STAT4, T-bet en INF-y, die geassocieerd zijn met Th1-celactivatie.
 
