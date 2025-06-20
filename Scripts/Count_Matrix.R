@@ -1,8 +1,11 @@
 # COUNT MATRIX
-# Benodigde packages downloaden 
+# Benodigde packages downloaden (readr = version '2.1.5') (dplyr = version '1.1.4')
 install.packages(c("readr", "dplyr"))
 
 # Rsamtools en Rsubread zijn Bioconductor packages:
+# (BiocManager = version '1.30.25')
+# (Rsamtools = version '2.24.0')
+# (Rsubread = version '2.22.1')
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 
