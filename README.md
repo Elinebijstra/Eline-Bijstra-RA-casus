@@ -1,4 +1,4 @@
-# Eline-Bijstra-RA-casus
+# Verhoogde genactiviteit van Th1-gerelateerde genen bij reumatoïde artritis
 
 <p align="center">
   <img src="assets/Logo_RA_Transcriptomics.png" alt="RA Transcriptomics Logo" width="600"/>
@@ -14,7 +14,7 @@
 - `literatuur/` - gebruikte referenties en literatuur voor het onderzoek.  
 - `README.md` - het document om de tekst hier te genereren.
 - `assets/` - overige documenten voor de opmaak van deze pagina.
-- `data_stewardship/` - Voor de competentie beheren ga je aantonen dat je projectgegevens kunt beheren met behulp van GitHub. In deze folder kan je hulpvragen terugvinden om je op gang te helpen met de uitleg van data stewardship. 
+- `data_stewardship/` - in deze folder is de uitwerking van de competentie beheren te vinden.
 
 ---
 
@@ -22,9 +22,9 @@
 
 Reumatoïde artritis (RA) is een chronische auto-immuunziekte die voornamelijk de kleine gewrichten aantast, zoals die in de handen, voeten, knieën en polsen. De ziekte wordt gekarakteriseerd door ontsteking van het synoviale weefsel (Hall et al., 2024). Chronische en herhaalde ontstekingen van de synoviale gewrichten kunnen leiden tot vervorming en vernietiging van kraakbeen en bot, wat uiteindelijk kan resulteren in invaliditeit bij patiënten (Li et al., 2014).
 Hoewel er effectieve therapieën beschikbaar zijn die de toestand van RA-patiënten kunnen verbeteren, is er momenteel geen genezing voor de ziekte (S El-Gabalawy, 2002). De ziektemechanismen van RA zijn gedeeltelijk bekend, maar de genregulatie blijft complex. Transcriptomics en meta-analyses spelen een belangrijke rol in het identificeren van genen die mogelijk bijdragen aan een vroegere diagnose en betere behandelingsopties (Afroz et al., 2017).
-Dit onderzoek heeft als doel om met behulp van R transcriptomicsdata te analyseren en te identificeren welke genen differentieel tot expressie komen bij reumatoïde artritis (RA) in vergelijking met een controlegroep. Daarnaast wordt onderzocht welke biologische pathways betrokken zijn bij de ziekte via Gene Ontology analyse.
+Dit onderzoek heeft als doel om met behulp van R transcriptomicsdata te analyseren en te identificeren welke genen differentieel tot expressie komen bij reumatoïde artritis (RA) in vergelijking met een controlegroep. Daarnaast wordt onderzocht welke biologische pathways betrokken zijn bij de ziekte via Gene Ontology analyse. Hierbij is ingezoomd op de Th1- en Th2-celdifferentiatiepathway, met als vraag welke rol deze pathway speelt bij reumatoïde artritis.
 
-De literatuur die ik heb geraadpleegd, is beschikbaar in de [bronnenmap](literatuur)
+De literatuur die hierbij is geraadpleegd, is beschikbaar in de [bronnenmap](literatuur)
 
 
 ## Methoden
@@ -33,7 +33,7 @@ Voor dit onderzoek zijn synoviumbiopten (gewrichtsslijnvlies) gebruikt van 8 per
 
 De voorbereiding en voorbewerking van de ruwe reumatoïde artritis data werden uitgevoerd in [Scripts/Mapping.R](Scripts/Mapping.R) Hierbij is het humane genoom (NCBI RefSeq: GCF_000001405.40) gebruikt als referentie. Vervolgens is op basis van BAM-bestanden een count matrix gegenereerd met [Scripts/Count_Matrix.R](Scripts/Count_Matrix.R) waarbij het referentiegenoom met accession number GCF_000001405.25-RS_2024_09 gebruikt is. Tot slot zijn op de gegenereerde count matrix statistische analyses uitgevoerd, waaronder een differentiële genexpressie analyse waaronder DESeq2 en een GO-Seq analyse, zoals beschreven in [Scripts/Statistiek_en_Analyse.R](Scripts/Statistiek_en_Analyse.R).
 
-Dit alles is samengevat in een [flowschema](Resultaten/Flowschema.png).
+Dit alles is samengevat in een [flowschema](Resultaten/Flowschema_Scripts.png).
 
 
 ## 📊 Resultaten
