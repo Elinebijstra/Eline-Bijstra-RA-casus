@@ -8,14 +8,16 @@ Grote_counts_int <- round(Grote_counts)
 
 # We maken een tabel waarin staat welke monsters reuma (RA) zijn en welke controle
 treatment_RA <- c(rep("control",4), rep("RA",4))
+# Zet de vector om in een data frame met één kolom 'treatment' als factor
 treatment_table_RA <- data.frame(treatment = factor(treatment_RA))
+# Geef de rijen namen die overeenkomen met de sample ID's
 rownames(treatment_table_RA) <- c("contr1", "contr2", "contr3", "contr4", "ra5", "ra6", "ra7", "ra8")
 
 # Packages downloaden en laden 
 BiocManager::install(c("DESeq2", "KEGGREST"))
 
-library(DESeq2)
-library(KEGGREST)
+library(DESeq2)          # version '1.48.1'
+library(KEGGREST)        # version '1.48.0'
 
 # DESeqDataSet aanmaken
 dds <- DESeqDataSetFromMatrix(countData = Grote_counts_int,
@@ -57,21 +59,14 @@ if (!requireNamespace("EnhancedVolcano", quietly = TRUE)) {
   BiocManager::install("EnhancedVolcano")}
 
 # Laad het pakket zodat je de functies kunt gebruiken
-library(EnhancedVolcano)
+library(EnhancedVolcano)       # version '1.26.0'
 
 # Maak een volcano plot van je resultaten
 EnhancedVolcano(resultaten,
-                lab = rownames(resultaten),  # Labels (genenamen) op de punten in de plot
+                lab = rownames(resultaten),   # Labels (genenamen) op de punten in de plot
                 x = 'log2FoldChange',         # X-as: de log2 fold change van genexpressie
                 y = 'padj')                   # Y-as: de aangepaste p-waarde (padj)
 
-# Met een iets andere opmaak
-# Alternatieve plot zonder p-waarde cutoff (alle genen zichtbaar)
-EnhancedVolcano(resultaten,
-                lab = rownames(resultaten),
-                x = 'log2FoldChange',
-                y = 'padj',
-                pCutoff = 0)
 
 # De plot opslaan
 dev.copy(png, filename = "C:/Users/Eline/OneDrive/Documenten/BML Jaar 2 Periode 4/Casus RA/Eline-Bijstra-RA-casus/Resultaten/VolcanoplotWC.png", 
@@ -86,13 +81,13 @@ dev.off()
 if (!requireNamespace("pathview", quietly = TRUE)) {
   BiocManager::install("pathview")}
 
-library(pathview)
+library(pathview)        # version '1.48.0'
 
 # Maak een named vector van de log2FoldChange
 gene_vector <- resultaten$log2FoldChange
 names(gene_vector) <- rownames(resultaten)
 
-# Visualiseer de KEGG pathway (hier een voorbeeld: Cytokine signaling)
+# Visualiseer de KEGG pathway 
 pathview(
   gene.data = gene_vector,
   pathway.id = "hsa04658",   # Kies een pathway die relevant is voor RA (de Th1 en Th2 cell differentiatie) 
@@ -110,14 +105,14 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 
 BiocManager::install(c("goseq", "org.Hs.eg.db", "GO.db", "clusterProfiler", "biomaRt"))
 
-# Laden van libraries
-library(goseq)
-library(org.Hs.eg.db)
-library(GO.db)
-library(clusterProfiler)
-library(biomaRt)
-library(dplyr)
-library(ggplot2)
+# Laden van packages
+library(goseq)              # version '1.60.0'
+library(org.Hs.eg.db)       # version '3.21.0'
+library(GO.db)              # version '3.21.0'
+library(clusterProfiler)    # version '4.16.0'
+library(biomaRt)            # version '2.46.0'
+library(dplyr)              # version '1.1.4'
+library(ggplot2)            # version '3.5.2'
 
 # Converteer SYMBOL → ENSEMBL
 converted <- bitr(rownames(resultaten),
