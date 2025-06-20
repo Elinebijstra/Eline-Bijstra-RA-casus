@@ -44,7 +44,7 @@ De [Probability Weighting Function](Resultaten/pwf_plot.png) (PWF) corrigeert vo
 
 Vervolgens werd op basis van deze resultaten ingezoomd op een specifieke [KEGG-pathway](Resultaten/hsa04658.pathview.png), namelijk Th1 and Th2 cell differentiation (hsa04658). In deze pathway vertoonden meerdere genen verhoogde expressie, waaronder STAT1, STAT4, T-bet en INF-y, die geassocieerd zijn met Th1-celactivatie.
 
-Tot slot is de differentiële genexpressie visueel weergegeven in een [volcano plot](Resultaten/VolcanoplotWC.png). Er zijn 2058 genen significant omhoog gereguleerd en 2487 significant omlaag gereguleerd. 
+Tot slot is de differentiële genexpressie visueel weergegeven in een [volcano plot](Resultaten/VolcanoplotWC.png). De rood gekleurde genen geven zowel een significante verandering in expressie weer (p-waarde <0,05) en een grote mate van up- of downregulated aan. De groen gekleurde genen hebben een expressieverandering, maar zonder statistische significantie. Er zijn 2058 genen significant omhoog gereguleerd en 2487 significant omlaag gereguleerd. 
 
 
 ## Conclusie
