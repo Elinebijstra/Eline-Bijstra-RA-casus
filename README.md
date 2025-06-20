@@ -33,6 +33,8 @@ Voor dit onderzoek zijn synoviumbiopten (gewrichtsslijnvlies) gebruikt van 8 per
 
 De voorbereiding en voorbewerking van de ruwe reumatoïde artritis data werden uitgevoerd in [Scripts/Mapping.R](Scripts/Mapping.R) Hierbij is het humane genoom (NCBI RefSeq: GCF_000001405.40) gebruikt als referentie. Vervolgens is op basis van BAM-bestanden een count matrix gegenereerd met [Scripts/Count_Matrix.R](Scripts/Count_Matrix.R) waarbij het referentiegenoom met accession number GCF_000001405.25-RS_2024_09 gebruikt is. Tot slot zijn op de gegenereerde count matrix statistische analyses uitgevoerd, waaronder een differentiële genexpressie analyse waaronder DESeq2 en een GO-Seq analyse, zoals beschreven in [Scripts/Statistiek_en_Analyse.R](Scripts/Statistiek_en_Analyse.R).
 
+Dit alles is samengevat in een [flowschema](Resultaten/Flowschema.png).
+
 
 ## 📊 Resultaten
 
