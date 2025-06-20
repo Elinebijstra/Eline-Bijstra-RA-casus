@@ -49,5 +49,7 @@ Tot slot is de differentiële genexpressie visueel weergegeven in een [volcano p
 
 ## 💡 Conclusie
 
-Uit de analyse van de RA-transcriptomicsdata bleek dat vooral genen actief zijn die betrokken zijn bij het imuunsysteem, voornamelijk de genen die een rol spelen bij T-helpercellen. In de Th1 and Th2 cell differentiation pathway kwamen meerdere genen naar voren met hogere activiteit, zoals STAT1, STAT4, T-bet en INF-γ. Deze genen sturen de activatie van Th1-cellen aan, die betrokken zijn bij ontstekingsreacties. De verhoogde activiteit van deze genen past bij het ontstekingsbeeld van reumatoïde artritis. 
+Uit de analyse van de RA-transcriptomicsdata bleek dat vooral genen actief zijn die betrokken zijn bij het imuunsysteem, voornamelijk de genen die een rol spelen bij T-helpercellen. Deze zijn significant verhoogd tot expressie gekomen bij RA-patiënten vergeleken met controles. 
+
+In de Th1 and Th2 cell differentiation pathway kwamen meerdere genen naar voren met hogere activiteit, zoals STAT1, STAT4, T-bet en INF-γ. Deze genen sturen de activatie van Th1-cellen aan, die betrokken zijn bij ontstekingsreacties. De verhoogde activiteit van deze genen past bij het ontstekingsbeeld van reumatoïde artritis. 
 
