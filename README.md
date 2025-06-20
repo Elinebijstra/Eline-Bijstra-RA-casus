@@ -1,4 +1,4 @@
-# Eline-Bijstra-RA-casus
+# Verhoogde genactiviteit van Th1-gerelateerde genen bij reumatoïde artritis
 
 <p align="center">
   <img src="assets/Logo_RA_Transcriptomics.png" alt="RA Transcriptomics Logo" width="600"/>
