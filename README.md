@@ -18,7 +18,7 @@
 
 ---
 
-## Introductie
+## 📖 Introductie
 
 Reumatoïde artritis (RA) is een chronische auto-immuunziekte die voornamelijk de kleine gewrichten aantast, zoals die in de handen, voeten, knieën en polsen. De ziekte wordt gekarakteriseerd door ontsteking van het synoviale weefsel (Hall et al., 2024). Chronische en herhaalde ontstekingen van de synoviale gewrichten kunnen leiden tot vervorming en vernietiging van kraakbeen en bot, wat uiteindelijk kan resulteren in invaliditeit bij patiënten (Li et al., 2014).
 Hoewel er effectieve therapieën beschikbaar zijn die de toestand van RA-patiënten kunnen verbeteren, is er momenteel geen genezing voor de ziekte (S El-Gabalawy, 2002). De ziektemechanismen van RA zijn gedeeltelijk bekend, maar de genregulatie blijft complex. Transcriptomics en meta-analyses spelen een belangrijke rol in het identificeren van genen die mogelijk bijdragen aan een vroegere diagnose en betere behandelingsopties (Afroz et al., 2017).
@@ -27,7 +27,7 @@ Dit onderzoek heeft als doel om met behulp van R transcriptomicsdata te analyser
 De literatuur die hierbij is geraadpleegd, is beschikbaar in de [bronnenmap](literatuur)
 
 
-## Methoden
+## 📈 Methoden
 
 Voor dit onderzoek zijn synoviumbiopten (gewrichtsslijnvlies) gebruikt van 8 personen: 4 met reumatoïde artritis (RA) en 4 zonder RA. De RA-patiënten hadden een bevestigde diagnose van >12 maanden en testten positief op ACPA. De controlepersonen waren ACPA-negatief. De data is afkomstig uit een eerder gepubliceerd onderzoek van Platzer et al. (2019).
 
@@ -47,7 +47,7 @@ Vervolgens werd op basis van deze resultaten ingezoomd op een specifieke [KEGG-p
 Tot slot is de differentiële genexpressie visueel weergegeven in een [volcano plot](Resultaten/VolcanoplotWC.png). De rood gekleurde genen geven zowel een significante verandering in expressie weer (p-waarde <0,05) en een grote mate van up- of downregulated aan. De groen gekleurde genen hebben een expressieverandering, maar zonder statistische significantie. Er zijn 2058 genen significant omhoog gereguleerd en 2487 significant omlaag gereguleerd. 
 
 
-## Conclusie
+## 💡 Conclusie
 
 Uit de analyse van de RA-transcriptomicsdata bleek dat vooral genen actief zijn die betrokken zijn bij het imuunsysteem, voornamelijk de genen die een rol spelen bij T-helpercellen. In de Th1 and Th2 cell differentiation pathway kwamen meerdere genen naar voren met hogere activiteit, zoals STAT1, STAT4, T-bet en INF-γ. Deze genen sturen de activatie van Th1-cellen aan, die betrokken zijn bij ontstekingsreacties. De verhoogde activiteit van deze genen past bij het ontstekingsbeeld van reumatoïde artritis. 
 
